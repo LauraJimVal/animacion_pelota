@@ -1,0 +1,65 @@
+/* Contenedor de la pelota */
+
+.contenedor{
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+/* Pelota */
+
+.pelota img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation: anim_vertical 1s alternate infinite ease-in, anim_horizontal 3s alternate infinite ease-out, rotar 4s infinite linear;
+    animation-play-state: running;
+}
+
+/***** código de la animación *****/
+/* Animación para el desplazamiento en el eje vertical */
+
+@keyframes anim_vertical {
+    0% {
+        top: 0px;
+        width: 100px;
+    }
+    
+
+    95%{
+        width: 95px;
+    }
+    
+    100% {
+        top: 610px;
+        width: 70px;
+    }
+
+}
+
+/* Animación para el desplazamiento en el eje horizontal */
+
+@keyframes anim_horizontal {
+    0% {
+        left: 0px;
+    }
+
+    100%{
+        left: 610px;
+    }
+
+}
+
+/* Animación adicional para hacer que la pelota rote */
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
