@@ -28,14 +28,13 @@
         width: 100px;
     }
     
-
-    95%{
-        width: 95px;
+    90%{
+        width: 90px;
     }
-    
+
     100% {
         top: 610px;
-        width: 70px;
+        width: 60px;
     }
 
 }
@@ -45,10 +44,12 @@
 @keyframes anim_horizontal {
     0% {
         left: 0px;
+        height: 100px;
     }
 
     100%{
-        left: 610px;
+        left: 600px;
+        height: 100px;
     }
 
 }
